@@ -430,7 +430,7 @@ def approval():
 	last="]YOU"
 	uuid=str(os.getuid()) + str(os.getlogin())
 	key = "6".join(uuid)
-	a=requests.get("https://github.com/denvwu/approval/blob/main/approval.txt").text
+	a=requests.get("https://github.com/denvwu/soleil/blob/main/approved.txt").text
 	if key in a:
 		main()
 	else:
